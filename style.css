@@ -10,21 +10,17 @@ body {
 a,
 button {
     transition: all .3s ease-in-out;
-    outline: none!important;
+    outline: none;
+}
+
+.button_cont {
+    background: transparent;
+    border: 0;
 }
 
 a:hover {
     text-decoration: none;
     cursor: pointer;
-}
-
-#page-loading-blocs-notifaction {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
 
 .bloc {
@@ -91,8 +87,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
+    background: url("img/texture-paper.webp");
 }
 
 .b-parallax {
@@ -292,6 +287,16 @@ a:hover {
     z-index: 1;
 }
 
+.logo_panthere {
+    font-size: 25px;
+    font-weight: normal;
+    float: left;
+    height: 40px;
+    font-size: 18px;
+    line-height: 20px;
+    margin-left: 20px;
+}
+
 .navbar-brand {
     height: auto;
     padding: 3px 15px;
@@ -332,6 +337,10 @@ a:hover {
     text-align: inherit;
 }
 
+
+
+
+
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
@@ -360,6 +369,17 @@ a:hover {
     float: right;
     position: relative;
     z-index: 2;
+}
+
+.presentation {
+    font-size: 21.4px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    
+}
+
+.row2 {
+    margin-top: 40px;
 }
 
 @media (min-width: 768px) {
@@ -438,6 +458,10 @@ nav .caret {
 .mg-md {
     margin-top: 10px;
     margin-bottom: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333333!important;
 }
 
 .mg-lg {
@@ -538,7 +562,7 @@ a[data-lightbox] {
 
 a[data-lightbox]:hover::before {
     content: "+";
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+    font-family: 'Karla', sans-serif,"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
     font-size: 32px;
     width: 50px;
     height: 50px;
@@ -649,13 +673,35 @@ p,
 label,
 .btn,
 a {
-    font-family: "helvetica";
+    font-family: 'Karla', sans-serif,"helvetica";
     font-weight: 400;
     color: #575757!important;
 }
 
 .container {
     max-width: 1000px;
+}
+
+blockquote { 
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.citation {
+    font-size: 20px;
+    width: 100%;
+    font-style: italic;
+    font-family: 'Karla', sans-serif,Georgia, "Times New Roman", serif;
+    letter-spacing: -1px;
+    text-align: center;
+    margin: auto;
+    line-height: 1;
+
+}
+
+.auteur {
+    font-size: 20px;
 }
 
 .hero-bloc-text {
@@ -677,12 +723,17 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 13px;
+    font-family: 'Karla', sans-serif;
 }
 
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
+}
+
+.center-block {
+    width: 100px;
 }
 
 .h1 {
@@ -739,8 +790,13 @@ h4 {
     color: #FFFFFF!important;
 }
 
+strong {
+    font-weight: normal;
+}
+
 .portfolio-thumb {
     margin-bottom: 24px;
+    margin: auto;
 }
 
 .portfolio-row {
@@ -810,19 +866,19 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots-bg.webp");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/lines-h2-bg.webp");
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/agence-la-panthere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
@@ -973,6 +1029,8 @@ h4 {
         float: left;
         margin-left: 10px;
     }
+
+
     .bloc {
         padding-left: 0;
         padding-right: 0;
