@@ -703,7 +703,6 @@ a {
 
 .partenaire {
     color: #E5D8D8;
-    margin: 10px 0 10px 0;
 }
 
 .col-sm-4, li {
@@ -833,6 +832,8 @@ strong {
 .portfolio-thumb {
     margin-bottom: 24px;
     margin: auto;
+    width: 270px;
+    height: 270px;
 }
 
 .portfolio-row {
