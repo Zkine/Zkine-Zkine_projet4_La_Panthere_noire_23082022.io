@@ -703,6 +703,12 @@ a {
 
 .partenaire {
     color: #E5D8D8;
+    margin: 10px 0 10px 0;
+}
+
+.col-sm-4, li {
+    margin-top: 14px;
+    margin-bottom: 14px;
 }
 
 .container {
