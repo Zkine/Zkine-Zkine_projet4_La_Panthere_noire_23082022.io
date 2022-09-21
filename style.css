@@ -7,6 +7,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+    font-family: 'Karla', sans-serif,Georgia, "Times New Roman", serif;
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -190,7 +194,7 @@ a:hover {
 
 .d-bloc .panel,
 .l-bloc {
-    color: rgba(0, 0, 0, .5);
+    color: black;
 }
 
 .d-bloc .panel button:hover,
@@ -382,6 +386,19 @@ a:hover {
     margin-top: 40px;
 }
 
+address {
+    font-size: 13px;
+    margin: 0;
+}
+.contact {
+    margin: 0;
+}
+
+.text-center {
+    position: relative;
+    text-align: center;
+}
+
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
@@ -532,6 +549,7 @@ button {
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
+    resize: none;
 }
 
 .scrollToTop {
@@ -675,7 +693,13 @@ label,
 a {
     font-family: 'Karla', sans-serif,"helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: black;
+}
+
+
+
+.partenaire {
+    color: #E5D8D8;
 }
 
 .container {
@@ -702,6 +726,7 @@ blockquote {
 
 .auteur {
     font-size: 20px;
+    color: gray;
 }
 
 .hero-bloc-text {
@@ -753,6 +778,8 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 h2 {
@@ -827,15 +854,15 @@ strong {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #A43C1B;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: white!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #A43C1B;
     color: #FFFFFF!important;
 }
 
@@ -853,7 +880,7 @@ strong {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #A43C1B!important;
 }
 
 .ltc-atomic-tangerine:hover {
@@ -950,6 +977,7 @@ strong {
         overflow-x: hidden;
         position: relative;
     }
+    address,
     h1,
     h2,
     h3,
