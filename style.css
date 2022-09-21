@@ -1,6 +1,3 @@
-
-
-
 body {
     margin: 0;
     padding: 0;
@@ -298,6 +295,7 @@ a:hover {
     font-size: 25px;
     font-weight: normal;
     float: left;
+    width: 216.875px;
     height: 40px;
     font-size: 18px;
     line-height: 20px;
@@ -767,6 +765,7 @@ p {
 
 .center-block {
     width: 100px;
+    height: 100px;
 }
 
 .h1 {
@@ -1012,7 +1011,7 @@ strong {
         -ms-transform: none;
     }
     .nav > li {
-        margin-top: 0;
+        margin: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
         background: rgba(0, 0, 0, .05);
         text-align: left;
